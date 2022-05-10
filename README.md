@@ -1,5 +1,5 @@
 <div align="center">
-<img alt="illuminationLOGO" src="docs/assets/logo.png" width="82"/>
+<img alt="illuminationLOGO" src="https://github.com/FurDevsCN/illumination/blob/main/docs/assets/logo.png" width="82"/>
 <h1>LightningRod<h1>
 </div>
   
