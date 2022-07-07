@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8f9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+
+.container {
+    background: #fff;
+    border-radius: 30px;
+    display: flex; 
+    margin-top: 3rem;
+}
+.container-right {
+    width: 500px;
+    height: 0px;
+}
+.container-left {
+    flex: 2;
+}
+
+
+.form-outer {
+    padding: 2rem 4rem;
+    display: block;
+}
+.banner-image img {
+    height: 600px;
+    width: 600px;    
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 20%;
+
+}
+.banner-image {
+    width: 570px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+h2.title {
+    text-align: center;
+    color: #53cdfd;
+    font-size: 1.7rem;
+}
+
+.form-outer input {
+    border: 1px solid #56aef485;
+    margin-bottom: 0rem;
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #f7f8f97a;
+}
+
+.form-outer input:focus {
+    background-color: #fff;
+    border: 1px solid #53cdfd;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-outer input:hover{
+    outline: none;
+    box-shadow: none;
+}
+
+input.input-from::placeholder {
+    color: #1797ff4d;
+}
+
+
+
+  input[type="checkbox"] {
+    display: none;
+}
+
+input.input-from {
+    text-decoration: 10px solid underline;
+    text-underline-offset: 20px;
+    text-align: center;
+    height: auto;
+    width: 300px;
+    text-align:center;
+    
+}
+
+
+
+input.submit-action {
+    background: #54bafe;
+    border: none;
+    width: auto;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 7px!important;
+    flex: 1;
+    
+}
+
+input.submit-action:hover {
+    box-shadow: 3px 3px 4px 2px #36bef42b;
+}
+
+input.submit-action:focus {
+    background: #499fd8;
+    color: #fff;
+}
+
+
+.submit {
+    display: flex;
+    width: 90%;
+    margin-top: 3rem;
+    text-align: center;
+    
+}
+
+p.second-title {
+    text-align: center;
+    color: rgb(116, 116, 116);
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 720px) {
+    body {
+        background-color: #fff;
+    }
+    .container-left {
+        width: 100%;
+    }
+
+    .container-right {
+        display: none;
+    }
+}
