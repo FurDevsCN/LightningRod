@@ -13,7 +13,7 @@ body {
     height: 100%;
     background: url(https://api.sunweihu.com/api/bing1/api.php) no-repeat center center fixed;
     position: fixed;
-    z-index:-1;
+    z-index: -1;
     -moz-background-size: cover;
     /*背景图片拉伸以铺满全屏*/
     -ms-background-size: cover;
@@ -99,7 +99,7 @@ input.input-form {
     text-underline-offset: 20px;
     text-align: center;
     height: auto;
-    width: 300px;
+    width: 100%;
     text-align: center;
 }
 
@@ -117,7 +117,7 @@ input.submit-action {
 
 input.submit-action:hover {
     box-shadow: 3px 3px 4px 2px #36bef42b;
-    
+
 }
 
 input.submit-action:focus {
@@ -156,7 +156,7 @@ p.second-title {
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
-.test{
+.test {
     flex: 1;
 }
 
@@ -166,14 +166,15 @@ p.second-title {
     margin: 0;
     padding: 0;
 }
+
 .container {
-    
+
     display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-    
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
 /* left-container */
@@ -208,22 +209,42 @@ p.second-title {
     font-size: 18px;
 }
 
-.glass{
-    background-color: rgba(255,255,255,0.7);
+.glass {
+    background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(4px);
 }
 
-.app{
+.glass-1 {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(0px);
+}
+
+.app {
 
     max-height: 700px;
     margin: auto;
     padding-top: 3rem;
-  
+
 }
-.anim{
+
+.anim {
     transition: .25s;
     transition-property: all;
     transition-duration: 0.25s;
     transition-timing-function: ease;
     transition-delay: 0s;
+}
+
+.messagebar {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.messagebar-ads{
+    font-size: 24px;
+    font-weight: 600;
+    color: gray;
+    line-height: 50px;
+    margin: 0 20px;
 }

@@ -18,6 +18,9 @@
               </div>
             </form>
           </div>
+          <div class="messagebar glass-1">
+            <span class="messagebar-ads">Google Ads</span>
+          </div>
         </div>
         <div class="right-container glass">
           <div class="banner-image">
