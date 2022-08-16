@@ -6,40 +6,43 @@ body {
     font-size: 14px;
 }
 
-
-.container {
-    background: #fff;
-    border-radius: 30px;
-    display: flex; 
-    margin-top: 3rem;
+.DailyWallpaper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://api.sunweihu.com/api/bing1/api.php) no-repeat center center fixed;
+    position: fixed;
+    z-index:-1;
+    -moz-background-size: cover;
+    /*背景图片拉伸以铺满全屏*/
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
-.container-right {
-    width: 500px;
-    height: 0px;
-}
-.container-left {
-    flex: 2;
-}
-
 
 .form-outer {
     padding: 2rem 4rem;
     display: block;
 }
+
 .banner-image img {
-    height: 600px;
-    width: 600px;    
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     object-fit: cover;
     object-position: 50% 20%;
 
 }
+
 .banner-image {
-    width: 570px;
-    height: 600px;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
-    border-radius: 20px;
+
 }
+
 h2.title {
     text-align: center;
     color: #53cdfd;
@@ -63,46 +66,58 @@ h2.title {
     box-shadow: none;
 }
 
-.form-outer input:hover{
+.form-outer input:hover {
     outline: none;
     box-shadow: none;
 }
 
-input.input-from::placeholder {
-    color: #1797ff4d;
+input.input-form::placeholder {
+    color: #0000004d;
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+input.input-form:hover::placeholder {
+    color: rgb(109, 109, 109);
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 
-
-  input[type="checkbox"] {
+input[type="checkbox"] {
     display: none;
 }
 
-input.input-from {
+input.input-form {
     text-decoration: 10px solid underline;
     text-underline-offset: 20px;
     text-align: center;
     height: auto;
     width: 300px;
-    text-align:center;
-    
+    text-align: center;
 }
+
 
 
 
 input.submit-action {
     background: #54bafe;
     border: none;
-    width: auto;
     color: #fff;
     font-weight: 800;
-    border-radius: 7px!important;
-    flex: 1;
-    
+    border-radius: 7px !important;
+    margin: 0 auto;
 }
 
 input.submit-action:hover {
     box-shadow: 3px 3px 4px 2px #36bef42b;
+    
 }
 
 input.submit-action:focus {
@@ -112,15 +127,13 @@ input.submit-action:focus {
 
 
 .submit {
-    display: flex;
-    width: 90%;
+    padding: 0 40px;
     margin-top: 3rem;
     text-align: center;
-    
+
 }
 
 p.second-title {
-    text-align: center;
     color: rgb(116, 116, 116);
 }
 
@@ -132,6 +145,7 @@ p.second-title {
     body {
         background-color: #fff;
     }
+
     .container-left {
         width: 100%;
     }
@@ -139,4 +153,77 @@ p.second-title {
     .container-right {
         display: none;
     }
+}
+
+/* ----------------------------------------------------------------------------------------------------- */
+.test{
+    flex: 1;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+    
+}
+
+/* left-container */
+.left-container {
+    margin: 10px;
+    height: 600px;
+    width: 400px;
+    background-color: blue;
+
+
+}
+
+.right-container {
+    margin: 10px;
+    height: 600px;
+    width: 600px;
+    background-color: green;
+
+}
+
+/* toolsbar */
+.toolsbar {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+}
+
+.title {
+    line-height: 50px;
+    margin: 0 18px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.glass{
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: blur(4px);
+}
+
+.app{
+
+    max-height: 700px;
+    margin: auto;
+    padding-top: 3rem;
+  
+}
+.anim{
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }

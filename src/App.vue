@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -12,21 +12,16 @@ export default {
 </script>
 
 <style>
-body{
-  background: rgb(240, 240, 240);
+body {
+  /* background: rgb(240, 240, 240);
+  width: 100%; */
+  margin: 0;
+  padding: 0;
+  user-select: none;
+
 }
+
 #app {
-    max-width: 1024px;
-    max-height: 700px;
-    background: rgba(255, 255, 255, 1);
-    border-radius:30px;
-    box-shadow: 5px 5px 5px #bbbbbb;
-    display: flex;
-    position: fixed;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		margin: auto;
+
 }
 </style>
