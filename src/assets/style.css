@@ -101,24 +101,17 @@ input.input-form {
     height: auto;
     width: 100%;
     text-align: center;
-}
-
-
-
-
-input.submit-action {
-    background: #54bafe;
     border: none;
-    color: #fff;
-    font-weight: 800;
-    border-radius: 7px !important;
-    margin: 0 auto;
+    outline: none;
+}
+input.input-form:hover{
+    background-color: rgba(255, 255, 255, 0.7)
+}
+.input-form:focus{
+    outline: none;
 }
 
-input.submit-action:hover {
-    box-shadow: 3px 3px 4px 2px #36bef42b;
 
-}
 
 input.submit-action:focus {
     background: #499fd8;
@@ -240,6 +233,7 @@ p.second-title {
     width: 100%;
     position: absolute;
     bottom: 0;
+    z-index: 1;
 }
 .messagebar-ads{
     font-size: 24px;
@@ -247,4 +241,30 @@ p.second-title {
     color: gray;
     line-height: 50px;
     margin: 0 20px;
+}
+.submit-btn{
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    bottom: 51px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.submit-btn:hover{
+    width: 100%;
+    position: absolute;
+    bottom: 51px;
+    height: 50px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0px 7px 25px 0px  rgba(100,100,100,0.3);
+    background-color: rgba(255, 255, 255,1);
+
+}
+.white{
+    background-color: rgba(255, 255, 255,1);
 }
