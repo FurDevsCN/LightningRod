@@ -7,19 +7,19 @@
           <div class="toolsbar">
             <span class="title">{{ msg }}</span>
           </div>
-          <div class="form-outer">
-            <p class="second-title">
-              <span size="3">请输入账号查询:</span>
-            </p>
-            <form action="" class="form-sign" method="post">
-              <input type="text" class="input-form" name="qq" id="qq" placeholder="请输入..">
+          <form action="" class="form-sign" method="post">
+            <div class="form-outer">
+              <p class="second-title">
+                <span size="3">请输入账号查询:</span>
+              </p>
+              <input type="text" class="input-form anim" name="qq" id="qq" placeholder="请输入..">
               <div class="submit anim">
-                <input class="submit-action" type="submit" value="查询" >
               </div>
-            </form>
-          </div>
-          <div class="messagebar glass-1">
-            <span class="messagebar-ads">Google Ads</span>
+            </div>
+            <input class="submit-btn anim" type="submit" value="查询">
+          </form>
+          <div class="messagebar  white">
+            <span class="messagebar-ads">Google Ads(bushi)</span>
           </div>
         </div>
         <div class="right-container glass">
