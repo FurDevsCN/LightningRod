@@ -19,7 +19,7 @@ export default {
   data () {
     return {
       title: "HelloWorld",
-      msg: "Hello Vue!",
+      msg: "Hello Vue! This is a SPA application use vue!",
     }
   }
 }

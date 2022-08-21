@@ -6,43 +6,52 @@ body {
     font-size: 14px;
 }
 
-.DailyWallpaper {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: url(https://api.sunweihu.com/api/bing1/api.php) no-repeat center center fixed;
-    position: fixed;
-    z-index: -1;
-    -moz-background-size: cover;
-    /*背景图片拉伸以铺满全屏*/
-    -ms-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+
+.container {
+    background: #fff;
+    border-radius: 30px;
+    display: flex; 
+    margin-top: 3rem;
+}
+.container-right {
+    width: 500px;
+    height: 0px;
+}
+.container-left {
+    flex: 2;
 }
 
+.messagebar {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.messagebar-ads{
+    font-size: 24px;
+    font-weight: 600;
+    color: gray;
+    margin: 0 80px;
+}
 .form-outer {
     padding: 2rem 4rem;
     display: block;
 }
-
 .banner-image img {
-    height: 100%;
-    width: 100%;
+    height: 600px;
+    width: 600px;    
     overflow: hidden;
     object-fit: cover;
     object-position: 50% 20%;
 
 }
-
 .banner-image {
-    height: 100%;
-    width: 100%;
+    width: 570px;
+    height: 600px;
     overflow: hidden;
-
+    border-radius: 20px;
 }
-
 h2.title {
     text-align: center;
     color: #53cdfd;
@@ -66,67 +75,66 @@ h2.title {
     box-shadow: none;
 }
 
-.form-outer input:hover {
+.form-outer input:hover{
     outline: none;
     box-shadow: none;
 }
 
-input.input-form::placeholder {
-    color: #0000004d;
-    transition: .25s;
-    transition-property: all;
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-
-input.input-form:hover::placeholder {
-    color: rgb(109, 109, 109);
-    transition: .25s;
-    transition-property: all;
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+input.input-from::placeholder {
+    color: #1797ff4d;
 }
 
 
-input[type="checkbox"] {
+
+  input[type="checkbox"] {
     display: none;
 }
 
-input.input-form {
+input.input-from {
     text-decoration: 10px solid underline;
     text-underline-offset: 20px;
     text-align: center;
     height: auto;
-    width: 100%;
-    text-align: center;
+    width: 300px;
+    text-align:center;
+    
+}
+
+
+
+input.submit-action {
+    background: #54bafe;
     border: none;
-    outline: none;
-}
-input.input-form:hover{
-    background-color: rgba(255, 255, 255, 0.7)
-}
-.input-form:focus{
-    outline: none;
+    width: auto;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 7px!important;
+    flex: 1;
+    
 }
 
 
 
 input.submit-action:focus {
-    background: #499fd8;
+    background: #35749e;
     color: #fff;
 }
 
+input.submit-action:hover {
+    background: #3da7ee;
+    box-shadow: 3px 3px 4px 2px #36bef42b;
+}
 
 .submit {
-    padding: 0 40px;
+    display: flex;
+    width: 90%;
     margin-top: 3rem;
     text-align: center;
-
+    
 }
 
 p.second-title {
+    text-align: center;
     color: rgb(116, 116, 116);
 }
 
@@ -138,7 +146,6 @@ p.second-title {
     body {
         background-color: #fff;
     }
-
     .container-left {
         width: 100%;
     }
@@ -146,125 +153,22 @@ p.second-title {
     .container-right {
         display: none;
     }
-}
-
-/* ----------------------------------------------------------------------------------------------------- */
-.test {
-    flex: 1;
-}
-
-.wrapper {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-/* left-container */
-.left-container {
-    margin: 10px;
-    height: 600px;
-    width: 400px;
-    background-color: blue;
-
-
-}
-
-.right-container {
-    margin: 10px;
-    height: 600px;
-    width: 600px;
-    background-color: green;
-
-}
-
-/* toolsbar */
-.toolsbar {
-    height: 50px;
-    width: 100%;
-    background-color: white;
-}
-
-.title {
-    line-height: 50px;
-    margin: 0 18px;
-    font-weight: 600;
-    font-size: 18px;
-}
-
-.glass {
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(4px);
-}
-
-.glass-1 {
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(0px);
-}
-
-.app {
-
-    max-height: 700px;
-    margin: auto;
-    padding-top: 3rem;
-
-}
-
-.anim {
-    transition: .25s;
-    transition-property: all;
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-
-.messagebar {
-    height: 50px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-}
-.messagebar-ads{
-    font-size: 24px;
-    font-weight: 600;
-    color: gray;
-    line-height: 50px;
-    margin: 0 20px;
-}
-.submit-btn{
-    z-index: 2;
-    width: 100%;
-    position: absolute;
-    bottom: 51px;
-    height: 50px;
-    outline: none;
-    border: none;
-    font-size: 15px;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-.submit-btn:hover{
-    width: 100%;
-    position: absolute;
-    bottom: 51px;
-    height: 50px;
-    outline: none;
-    border: none;
-    font-size: 18px;
-    box-shadow: 0px 7px 25px 0px  rgba(100,100,100,0.3);
-    background-color: rgba(255, 255, 255,1);
-
-}
-.white{
-    background-color: rgba(255, 255, 255,1);
+    h2.title {
+        float:left;
+        text-align: center;
+        color: #53cdfd;
+        font-size: 1.7rem;
+    }
+    p.second-title {
+        float:center;
+        color: rgb(116, 116, 116);
+    }
+    input.input-from {
+        text-decoration: 10px solid underline;
+        text-underline-offset: 20px;
+        height: auto;
+        width: 270px;
+        text-align:center;
+        
+    }
 }
